@@ -119,10 +119,15 @@
             color: #fff;
             height: 40px;
         }
-        .music-button {
-            display: block;
-            margin: 20px auto 0;
-            text-align: center;
+        .background-video {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: translate(-50%, -50%);
+            z-index: 1;
         }
     </style>
 </head>
@@ -154,10 +159,6 @@
                             <div class="buttons">
                                 <button class="btn btn-outline-primary px-4" onclick="window.location.href='mailto:kyllian@ichigo.me'">Message</button>
                                 <button class="btn btn-primary px-4 ms-3" onclick="window.location.href='tel:+6285179771076'">Contact</button>
-                            </div>
-                            <div class="music-button">
-                                <button class="btn btn-success px-4" onclick="document.getElementById('audio-player').play()">Play Music</button>
-                                <audio id="audio-player" src="https://example.com/path-to-your-night-changes-song.mp3"></audio>
                             </div>
                         </div>
                     </div>
